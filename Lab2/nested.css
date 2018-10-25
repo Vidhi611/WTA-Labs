@@ -1,0 +1,21 @@
+#compact
+{
+	background-color:yellow;
+}
+#mid
+{
+	background-color:cyan; 
+}
+#sports
+{
+	background-color: red;
+}
+h1
+{
+	font-family: Georgia;
+	font-size:2.0em;
+	padding:2px;
+	text-align: center;
+	border-bottom: 3px dotted lightblue;
+
+}

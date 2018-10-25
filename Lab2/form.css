@@ -1,0 +1,52 @@
+fieldset
+{
+	border:2px solid purple;
+	margin:0 auto;
+	width:50%;
+	padding:20px;
+}
+legend
+{
+	border:2px solid purple;
+	padding:5px;
+	font-family: Georgia;
+	color:white;
+	background-color: orange;
+	font-weight: bold;
+
+}
+label
+{
+	display:inline-block;
+	font-weight: bold;
+	width:30%;
+	padding:3%;
+}
+input
+{
+
+		padding:5px;
+		border:2px solid purple;
+		margin:0 5%;
+		width:40%;
+		display:inline;
+		background-color:#E3AE57; 
+}
+input[type=submit]
+{
+		padding:5px;
+		border:2px solid purple;
+		margin:0 5%;
+		width:20%;
+		display:inline;
+		background-color: orange;
+}
+input[type=reset]
+{
+		padding:5px;
+		border:2px solid purple;
+		margin:0 5%;
+		width:20%;
+		display:inline;
+		background-color: orange;
+}

@@ -1,0 +1,57 @@
+.Fig1{
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 20px;
+  padding: 20px;
+}
+img.scaled {
+  width: 150%;
+}
+.Para1{
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+}
+.Fig2{
+  float: left;
+  width: 30%;
+  text-align: center;
+  font-style: normal;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 20px;
+  padding: 20px;
+}
+img.scaled {
+  width: 100%;
+}
+.Para2{
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+}
+.Fig3{
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 20px;
+  padding: 20px;
+}
+img.scaled {
+  width: 100%;
+}
+.Para3{
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+}
