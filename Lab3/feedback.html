@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validate</title>
+	<script type="text/javascript">
+	function fun()
+	{
+			var x=document.forms["f1"];
+			var y1=x["fname"].value;
+			var y2=x["lname"].value;
+			var mailformat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			if(document.f1.fname.value=="")
+			{
+				alert("please enter your first name");
+				document.f1.fname.focus();
+				return false;
+			}
+			if(y1.length>20)
+			{
+				alert("First name cannot exceed 20 chars");
+				document.f1.fname.focus();
+				return false;
+			}
+			if(document.f1.lname.value=="")
+			{
+				alert("please enter your last name");
+				document.f1.lname.focus();
+				return false;
+			}
+			if(y2.length>20)
+			{
+				alert("Last name cannot exceed 20 chars");
+				document.f1.lname.focus();
+				return false;
+			}
+			if(!x["mail"].value.match(mailformat))
+			{
+				alert("You have enetered an invalid email address!");
+				document.f1.mail.focus();
+				return false;
+			}
+			if((document.f1.gender[0].checked==false) &&  (document.f1.gender[1].checked==false))
+			{
+				alert("please choose ur gender :Male or female");
+				return false;
+			}
+			if(document.f1.comments.value=="")
+			{
+				alert("please enter ur comments");
+				return false;
+			}
+			
+
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="p3a.css">
+</head>
+<body>
+<form name="f1"  method="post" onsubmit=" return fun()">
+	<fieldset>
+		<label>FirstName</label>
+		<input type="text" name="fname" size="20">
+		<br>
+		<label>LastName</label>
+		<input type="text" name="lname" size="20">
+		<br>
+		<label>email</label>
+		<input type="text" name="mail">
+		<br>
+		<label>Gender</label>
+		<br>
+		<label>Male</label>
+		<input type="radio" name="gender" value="male">
+		
+		<label>Female</label>
+  		<input type="radio" name="gender" value="female">
+  		<br>
+  		<label>comments</label>
+  		<textarea name="comments" rows="10 cols="30"></textarea>
+  		<br>
+  		<input type="submit" name="submit" value="submit">
+	</fieldset>
+	<p div="demo"></p>
+</form>
+
+</body>
+</html>

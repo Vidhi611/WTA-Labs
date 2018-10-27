@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FEEDBACK</title>
+   <script type="text/javascript"> 
+   function display() {
+        document.getElementById("display1").innerHTML = document.getElementsByName("name1")[0].value;
+        document.getElementById("display2").innerHTML = document.getElementsByName("city1")[0].value;
+        if (document.getElementById('f').checked) {
+             var rate_value = document.getElementById('f').value;
+              document.getElementById("display3").innerHTML = rate_value;
+             }
+         else
+         { var rate_value = document.getElementById('m').value;
+              document.getElementById("display3").innerHTML = rate_value;
+         }
+        document.getElementById("display4").innerHTML = document.getElementById("comments").value;
+
+                    }
+         </script>  
+</head>
+<body>
+  <h4>Feedback</h4>
+  <form  method="get" >
+    <div>
+    <label>Name :</label>
+    <span style="display:inline-block; width: 12px;"></span>
+    <input id="name" type="text" name="name1" >
+    </div>
+    <br>
+    <div>
+    <label>City :</label>
+    <span style="display:inline-block; width: 28px;"></span>
+    <input id="city" type="text" name="city1" >
+    </div>
+    <br>
+    <div id="g1">
+    <label>Gender :</label>
+    <span style="display:inline-block; width: 2px;"></span>
+    Female
+    <input id="f" type="radio" name="gender" value="Female" >
+    Male
+    <input id="m" type="radio" name="gender" value="Male" >
+    </div>
+    <br>
+    <div>
+    <label>Comments :</label>
+    <br>
+    <textarea id="comments" name="comments" style="width:500px; height:200px">
+    </textarea>
+    </div>
+    <br>
+    </form>
+    <div><input type="Submit" value="Submit" onclick="display()">
+    </div>
+    <br>
+    <label>Your input: </label>
+      <p><span id="display1"></span></p>
+      
+      <p><span id="display2"></span></p>
+      
+      <p><span id="display3"></span></p>
+      
+      <p><span id="display4"></span></p>
+      
+
+
+</body>
+</html>

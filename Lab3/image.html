@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMAGES</title>
+    <link rel="stylesheet" type="text/css" href="image.css">
+</head>
+<body>
+<h4>SLIDE SHOW</h4>
+<img src="http://www.nitk.ac.in/sites/default/files/public/pictures/course1.JPG" id="imgDemo" alt="HTML5 Icon" width="400" height="250">
+<br><br>
+    <button onclick="prvs()" id="btnTwo">previous</button> 
+
+ <button onclick="nxt()" id="btnOne">next</button>
+ <script>
+var img = new Array("http://www.nitk.ac.in/sites/default/files/public/pictures/course1.JPG","http://www.nitk.ac.in/sites/default/files/public/pictures/id1.JPG","http://www.nitk.ac.in/sites/default/files/public/pictures/id3.JPG","http://www.nitk.ac.in/sites/default/files/public/pictures/id4.JPG","http://www.nitk.ac.in/sites/default/files/public/pictures/id5.JPG");
+var imgElement = document.getElementById("imgDemo");
+var i = 0;
+var imgLen = img.length;
+        function nxt()
+        {
+            if(i < imgLen-1)
+                {
+                    i++;
+                }
+            else{
+                    i=0;                
+                }
+                imgElement.src = img[i];                    
+        }
+
+        function prvs()
+        {
+            if(i > 0)
+                {
+                    i--;
+                }
+            else
+            {
+                i = imgLen-1;
+            }
+                imgElement.src = img[i];                    
+        }
+</script>
+</body>
+</html>
+
