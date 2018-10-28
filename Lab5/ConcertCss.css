@@ -1,0 +1,63 @@
+concert_ad,title1
+{
+	font-size:80%; 
+    margin:0.5em; 
+    font-family: Verdana; 
+    display:block;
+    background-color: lightblue;
+    text-align: center; 
+}
+ad
+{
+	display:block;  
+    border: 1px solid silver; 
+    margin:0.5em;  
+    padding:0.5em;  
+    background-color:whitesmoke; 
+	
+}
+name
+{	
+	padding-left: 10px;
+	font-style: bold;
+	color: blue;
+}
+performers
+{
+	display:block;
+}
+place
+{
+	display:block;
+	padding-left: 10px;
+	font-style: bold;
+	color: blue;
+}
+date,time
+{
+	padding-left: 10px;
+	font-style: bold;
+	color: blue;
+}
+genre
+{
+	padding-left: 10px;
+	font-style: italic;
+	color:maroon;
+}
+first_name,ticket_price
+{
+	padding-left: 10px;
+	color:orange;
+}
+last_name
+{
+	color:orange;
+}
+seller
+{
+	display:block;
+	padding-left: 10px;
+	font-style: bold;
+	color: black;
+}
